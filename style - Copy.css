@@ -1,0 +1,468 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background-color: pink;
+    text-align: center;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+/*------------nav--------------*/
+nav {
+    background-color: skyblue;
+
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li, a {
+    color: black;
+    font-size:15px ;
+}
+nav ul li:nth-child(2) {
+    color:yellow;
+}
+nav ul li:nth-child(2) i {
+    font-size: 18px;
+    color: yellow;
+    margin-left: 6px;
+}
+nav ul li:nth-child(3) {
+    position: relative;
+}
+nav ul li:nth-child(3) input {
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    outline: none;
+}
+nav ul li:nth-child(3) i {
+    position: absolute;
+    font-size: 18px;
+    right: 15px;
+    color: slategrey;
+    line-height: 30px;
+    cursor: pointer;
+}
+nav ul li:nth-child(4) button {
+    height: 30px;
+    padding: 0 12px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(88, 87, 87);
+    border-radius: 5px;
+    transition: all 0,3s ease;
+}
+nav ul li:nth-child(4) button i {
+    margin-right: 6px;
+}
+nav ul li:nth-child(4) button:hover {
+    background-color: rgb(100, 97, 97);
+}
+nav ul li:nth-child(5) {
+    text-align: center;
+}
+nav ul li:nth-child(5):hover a {
+    color: yellow;
+}
+nav ul li:nth-child(6):hover a {
+    color:yellow;
+}
+nav ul li :nth-child(7):hover a {
+    color:yellow;
+}
+/*------------------menu-------------------*/
+.menu-bar{
+    background-color: rgb(211, 93, 93);
+    
+}
+.menu-bar-content > ul {
+    display: flex;
+    justify-content: space-between;
+}
+.menu-bar-content > ul > li {
+    padding: 15px 6px;
+    transition: all 0.3s ease;
+}
+.menu-bar-content > ul > li a {
+    color: white;
+    font-size: 13px;
+}
+.menu-bar-content > ul > li a i {
+    margin-right: 8px;
+    font-size: 16px;
+}
+.menu-bar-content > ul > li:hover {
+    background-color: rgb(126, 121, 123);
+}
+.menu-bar-content > ul > li:nth-child(5){
+    position: relative;
+}
+.menu-bar-content > ul > li:nth-child(5)::before {
+    position: absolute;
+    content: "giảm 10%";
+    display: block;
+    height: 15px;
+    width: 45px;
+    background-color: red;
+    border-radius: 5px;
+    right: -20;
+    top: 0;
+    font-size: 10px;
+    padding-left: 3px;
+    color: white;
+}
+.menu-bar-content > ul > li:nth-child(5)::after {
+    position: absolute;
+    content: "";
+    background-color: red;
+    height: 7px;
+    width: 7px;
+    display: block;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    transform: rotate(45deg);
+}
+
+
+/*------------------------tintuc----------------------------*/
+
+   .post-slide{    
+    display: block;
+    border: 1px solid lightblue;
+  margin-left: 260px;
+  margin-right: -170px;
+    background: #fff;
+    }
+    .post-slide .post-img{    
+        overflow: hidden;    
+        position: relative;
+        }
+    .post-slide .post-img{    
+    overflow: hidden;    
+    position: relative;
+    }
+    .post-slide .post-img img{    
+    width: 100%;    
+    height:auto;    
+    transform: scale(1,1);    
+    transition: all 0.30s ease 0s;
+    }
+    .post-slide:hover .post-img img{    
+    transform: scale(1.2,1.2);
+    }
+    .post-slide .over-layer{    
+    position: absolute;    
+    top:0;    
+    left:0;    
+    width:100%;    
+    height:100%;    
+    opacity: 0;    
+    text-align:center;    
+    background:rgba(68, 67, 64,0.9);    
+    transition: all 0.50s linear;
+    }
+    .post-slide:hover .over-layer{    
+    opacity:1;
+    }
+    .post-slide .post-link{    
+    padding:0;    
+    margin:0;    
+    list-style:none;    
+    position: relative;    
+    top:45%;
+    }
+    .post-slide .post-link li{    
+    display: flex;    
+    margin-right:10px;
+    }
+    .post-slide .post-link li a{    
+    width: 60px;    
+    height: 60px;    
+    line-height: 59px;    
+    border-radius: 50%;    
+    color:#fff;    
+    background:#333;    
+    font-size:20px;    
+    transform: scale(1,1);    
+    transition: all 0.20s linear;   
+    text-decoration:none;
+    }
+    .post-slide .post-link li a:hover{    
+    text-decoration:none;    
+    transform: scale(1.1,1.1);
+    }
+     
+    .post-slide .post-review{    
+    padding: 15px 0;    
+    overflow: hidden;
+    }
+    .post-slide .post-title{    
+    margin-top: 0;
+    }
+    .post-slide .post-title a{    
+    display: block;    
+    color: #333;    
+    font-size: 18px;    
+    text-align:center;    
+    font-weight: bold;    
+    text-transform:uppercase;    
+    transition: all 0.50s ease 0s;  text-decoration:none;
+    }
+     
+    .post-slide .post-title a:hover{    
+    text-decoration: none;    
+    color:#1f80bb;
+    }
+     
+    .post-slide .post-info{    
+    list-style:none;    
+    padding:10px 0 0 0;    
+    margin:0 0 7px 0;    
+    text-align:center;    
+    border-top:1px solid #d3d3d3;   
+    font-size:14px;
+    }
+     
+    
+     
+    .post-slide .tag-info{    
+    margin:0;    
+    padding:0 0 10px 0;    
+    text-align:center;    
+    border-bottom:1px solid #d3d3d3;    
+    font-size:14px;
+    }
+     
+    .post-slide .tag-info li{    
+    list-style:none;    
+    display: inline;
+    }
+     
+    .post-slide .tag-info li a{    
+    color:#808080;  
+    font-family:Arial, Helvetica, sans-serif;   
+    font-size:10px;    
+    text-transform:capitalize;  
+    text-decoration:none;
+    }
+     
+    .post-slide .tag-info li a:hover{    
+    color:#1f80bb;    
+    text-decoration:none;
+    }
+   
+     
+    .post-slide .read-more{    
+    color:#333;    
+    float: right;    
+    font-weight: bold;    
+    margin-right:25px;    
+    text-transform:capitalize;  
+    text-decoration:none;
+    }
+     
+    .post-slide .read-more:hover{    
+        color:#1f80bb;    
+        text-decoration:none;
+        }
+         
+    
+
+        .innerBox {
+            background-color: tomato;
+            padding: 0 20px;
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .innerBox li {
+            list-style: none;
+        }
+        .innerBox li:hover{
+            color: white;
+            font-weight: bold;
+            transition: all 0.3s linear;
+        }
+        /*----------------------form---------------------*/
+        .adress-form{
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(0, 0, 0, 0.6);
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #333;
+            display: none;
+            z-index: 9;
+        }
+        .adress-form-content{
+            width: 400px;
+            height: 500px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .adress-form-content form{
+            padding: 0 40px;
+        }
+        .adress-form-content h2 {
+            font-size: 14px;
+            padding: 12px 0;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+        }
+        .adress-form-content h2 span{
+            display: block;
+            position: absolute;
+            height: 30px;
+            padding: 0 6px;
+            border: 1px solid #ddd;
+            right: 12px;
+            cursor: pointer;
+            top: 50%;
+            transform: translateY(-50%);
+            line-height: 30px;
+            color: #333;
+            border-radius: 5px;
+        }
+        .adress-form-content h2 span:hover{
+            color: purple;
+        }
+        .adress-form-content form p{
+            font-size: 16px;
+
+        }
+        .adress-form-content form input,select{
+            height: 45px;
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            padding: 6px;
+            border-radius: 5px;
+
+        }
+        .adress-form-content form input,select:hover{
+            box-shadow: greenyellow;
+        }
+        .adress-form-content form button{
+            margin-top: 20px;
+            height: 40px;
+            width: 80%;
+            cursor: pointer;
+            background-color: aqua;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding: 6px 10px;
+            transition: 0.25s ease-in-out;
+        }
+        .adress-form-content form button:hover{
+            border: 2px solid greenyellow;
+        }
+
+        
+        .collumn{
+            text-align: center;
+            font-size: 50px;
+            color: rgb(209, 72, 72);
+        }
+        
+        .comment{
+            background-image: url(hinhanh/phan-mem-quan-ly-posapp.gif) ;
+            background-size: 315px 180px;
+            
+        }
+       
+
+
+
+        /*---------------------menu--------------*/
+    .menu-bar-content ul li{
+        position: relative;
+    }
+    .submenu{
+        position: absolute;
+        background-color: paleturquoise;
+        width: 200px;
+        height: auto;
+        left: 0;
+        top: 100%;
+        padding: 2px;
+        display: none;
+    }
+    .submenu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .submenu ul li{
+        padding: 6px 0;
+    }
+    .menu-bar-content ul li:hover .submenu{
+        display: block;
+    }
+    .submenu > ul > li:hover a {
+        color: yellow;
+    }
+    .submenu ul li:hover{
+        background: none;
+    }
+
+    .menu-bar-content ul li{
+        position: relative;
+    }
+    .upmenu{
+        position: absolute;
+        background-color: paleturquoise;
+        width: 200px;
+        height: auto;
+        left: 0;
+        top: 100%;
+        padding: 2px;
+        display: none;
+    }
+    .upmenu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .upmenu ul li{
+        padding: 6px 0;
+    }
+    .menu-bar-content ul li:hover .upmenu{
+        display: block;
+    }
+    .upmenu ul li:hover a {
+        color: yellow;
+    }
+    .upmenu ul li:hover{
+        background: none;
+    }
+   
+     
+        
+
